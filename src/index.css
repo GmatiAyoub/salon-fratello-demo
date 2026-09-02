@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ===== Couleurs personnalisées ===== */
+@theme {
+  --color-cream: #f4f1ea;
+  --color-warm-beige: #e8e1d5;
+  --color-cafe: #6b4226;
+  --color-cafe-clair: #8b5a2b;
+  --color-sage: #7f8c5e;
+  --color-charcoal: #2c3e50;
+  --color-dark-brown: #3e2723;
+}
+
+/* ===== Polices Google ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Nunito:wght@300;400;600;700;800&display=swap');
+
+/* ===== Styles globaux ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-dark-brown);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-cafe-clair);
+  border-radius: 10px;
+}
