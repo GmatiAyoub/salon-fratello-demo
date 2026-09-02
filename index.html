@@ -1,10 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>salon-fratello-demo</title>
+    <title>Salon de thé Fratello</title>
+    
+    <!-- ✅ Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- ✅ Configuration des couleurs personnalisées -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#f4f1ea',
+              'warm-beige': '#e8e1d5',
+              cafe: '#6b4226',
+              'cafe-clair': '#8b5a2b',
+              sage: '#7f8c5e',
+              charcoal: '#2c3e50',
+              'dark-brown': '#3e2723',
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              nunito: ['Nunito', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
